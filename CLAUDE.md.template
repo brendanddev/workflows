@@ -1,0 +1,30 @@
+# CLAUDE.md
+
+> Copy this into a new project's root as `CLAUDE.md`. This is the always-loaded
+> context file — keep it short. Anything long or conditionally-relevant belongs
+> in `.claude/rules/` or a skill instead (see `WORKFLOW.md` and, if usage feels
+> wasteful, the `usage-analyzer` skill).
+
+## What this project is
+`<one or two sentences>`
+
+## Workflow
+This project follows the investigation → implementation → verify → learnings
+discipline described in `WORKFLOW.md`. Read that file if you haven't.
+
+Key references:
+- `.claude/dev/module-map.md` — module ownership map
+- `.claude/rules/invariants.md` — hard invariants (never violate; propose exceptions explicitly)
+- `.claude/rules/architecture.md` — layer boundaries
+- `docs/roadmap/README.md` — current phase status
+
+## Verification
+The verification gate for this project is: `<exact command(s), e.g. "make verify" or "npm run lint && npm test">`
+This must pass before every commit. No exceptions.
+
+## Current baseline
+- Last verified: `<date>`
+- Test count / status: `<N passing>`
+- Branch pattern: `<if any, e.g. feat/<name> → dev → main>`
+
+<!-- Keep the baseline line above current — /wrap-up's "sync check" step should catch staleness, but don't rely on that alone. -->
